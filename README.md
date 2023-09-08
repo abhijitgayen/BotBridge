@@ -55,7 +55,5 @@ npm run build
 
 # You can enrol this course to see how i make this
 <a href="https://www.udemy.com/course/chatbot-using-simple-javascript/?couponCode=CODEWITHABHIJIT">
-  <img src="https://codewithabhijit.vercel.app/images/demo/course_2.jpg" alt="Chat Bot Using Simple javascript"/>
+  <img src="https://codewithabhijit.vercel.app/images/demo/course_2.jpg" alt="Chat Bot Using Simple javascript" width="300" title="Course ChatBot Using Simple javascripts"/>
 </a>
-
-![]()
