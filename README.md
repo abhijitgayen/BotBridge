@@ -55,5 +55,8 @@ npm run build
 
 # You can enrol this course to see how i make this
 <a href="https://www.udemy.com/course/chatbot-using-simple-javascript/?couponCode=CODEWITHABHIJIT">
-  <img src="https://codewithabhijit.vercel.app/images/demo/course_2.jpg" alt="Chat Bot Using Simple javascript" width="300" title="Course ChatBot Using Simple javascripts"/>
+  <img src="https://codewithabhijit.vercel.app/images/demo/course_1.jpg" alt="Chat Bot Using Simple javascript" width="300" title="Course ChatBot Using Simple javascripts"/>
+</a>
+<a href="https://www.udemy.com/course/chatbot-ui-ux-in-nextjs/?referralCode=3500EFFFDD3662EB008F">
+  <img src="https://codewithabhijit.vercel.app/images/demo/course_2.jpg" alt="Chat Bot UI/UX In NextJS" width="300" title="Chat Bot UI/UX In NextJS"/>
 </a>
