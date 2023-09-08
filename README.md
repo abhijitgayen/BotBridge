@@ -55,4 +55,4 @@ npm run build
 
 # You can enrol this course to see how i make this
 
-![Chat Bot Using Simple javascript](https://github.com/abhijitgayen/BotBridge/blob/main/about_content/5399572_9014_4.jpg?raw=true)
+![Chat Bot Using Simple javascript](https://codewithabhijit.vercel.app/images/demo/course_2.jpg)
