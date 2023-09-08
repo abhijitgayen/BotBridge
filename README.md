@@ -26,3 +26,29 @@ In an increasingly digital world, chatbots have become integral in delivering ef
 
 
 **This project presents an exciting opportunity to contribute to the advancement of conversational AI and empower developers to create engaging and efficient user interactions across diverse digital platforms.**
+
+
+# Setup of this project
+
+```termial
+git clone https://github.com/abhijitgayen/BotBridge.git
+```
+```termial
+cd BotBridge
+```
+To install all dependencies.
+```termial
+npm i
+```
+to test and train model 
+```termial
+npm run test
+```
+to train model
+```termial
+npm run train
+```
+to deploy and run sever
+```termial
+npm run build
+```
