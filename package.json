@@ -2,10 +2,10 @@
   "name": "basic_chatbot",
   "version": "1.0.0",
   "description": "this is a basic chatbot using js",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "train": "node train.js",
-    "start": "node index.js",
+    "start": "node train.js && node server.js",
     "test": "node train.js && node input.js",
     "build": "node train.js && node server.js"
   },
