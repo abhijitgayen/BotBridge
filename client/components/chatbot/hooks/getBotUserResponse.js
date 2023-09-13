@@ -17,7 +17,7 @@ function GetBotUserResponse ({setConversations = () =>{}}){
         axios(
             {
                 method: 'post',
-                url: process.env.NEXT_PUBLIC_CHATBOT_API+'/chatbot',
+                url: process.env.NEXT_PUBLIC_CHATBOT_API+'/btn_chatbot',
                 headers: { 
                     'Content-Type': 'application/json'
                 },
