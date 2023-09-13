@@ -30,28 +30,51 @@ In an increasingly digital world, chatbots have become integral in delivering ef
 
 # Setup of this project
 
-```termial
+```terminal
 git clone https://github.com/abhijitgayen/BotBridge.git
 ```
-```termial
-cd BotBridge
+## Run ChatBot Server for ChatBot API
+```terminal
+cd BotBridge/server
 ```
 To install all dependencies.
-```termial
+```terminal
 npm i
 ```
 to test and train model 
-```termial
+```terminal
 npm run test
 ```
 to train model
-```termial
+```terminal
 npm run train
 ```
-to deploy and run sever
-```termial
+for development
+```terminal
+npm run start
+```
+to deploy or run sever
+```terminal
 npm run build
 ```
+## Run ChatBot UI/UX 
+```terminal
+cd BotBridge/client
+```
+To install all dependencies.
+```terminal
+yarn
+```
+for development
+```terminal
+yarn dev
+```
+for delpoy frontend APP
+```terminal
+yarn build
+```
+
+
 
 # You can enrol this course to see how i make this
 <a href="https://www.udemy.com/course/chatbot-using-simple-javascript/?couponCode=CODEWITHABHIJIT">

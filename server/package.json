@@ -5,9 +5,9 @@
   "main": "server.js",
   "scripts": {
     "train": "node train.js",
-    "start": "node train.js && node server.js",
     "test": "node train.js && node input.js",
-    "build": "node train.js && node server.js"
+    "start": "node train.js && node server.js",
+    "build": "node server.js"
   },
   "keywords": [
     "nlpjs",
