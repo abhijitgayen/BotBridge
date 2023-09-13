@@ -1,7 +1,7 @@
 const {dockStart} = require('@nlpjs/basic')
 
 const trainModel = async () => {
-    const dock = await dockStart({use : ['Basic']})
+    const dock = await dockStart({use : ['Basic','LangEn']})
     const nlp = dock.get('nlp')
 
     // await nlp.addCorpus('./intent.json')
