@@ -17,7 +17,7 @@ function GetBotUserResponse ({setConversations = () =>{}}){
         axios(
             {
                 method: 'post',
-                url: 'https://zerocodersbot.vercel.app/bot_response',
+                url: process.env.NEXT_PUBLIC_CHATBOT_API+'/chatbot',
                 headers: { 
                     'Content-Type': 'application/json'
                 },
