@@ -20,49 +20,49 @@
       "answers": [
         {
           "answer": "Greetings! I'm here to assist you. How can I be of service today?",
-          "opts": ["Explore Courses","Upcoming Events","Give Us Your Thoughts"]
+          "opts": ["chatbot course","Upcoming Events","Give Us Your Thoughts"]
         },
         {
           "answer": "Hello there! Welcome to ChatBot. What can I help you with right now?",
-          "opts": ["Explore Courses","Upcoming Events","Give Us Your Thoughts"]
+          "opts": ["chatbot course","Upcoming Events","Give Us Your Thoughts"]
         },
         {
           "answer": "Hi! It's great to have you here. How may I assist you today?",
-          "opts": ["Explore Courses","Upcoming Events","Give Us Your Thoughts"]
+          "opts": ["chatbot course","Upcoming Events","Give Us Your Thoughts"]
         },
         {
           "answer": "Welcome to ChatBot. How can I make your day easier?",
-          "opts": ["Explore Courses","Upcoming Events","Give Us Your Thoughts"]
+          "opts": ["chatbot course","Upcoming Events","Give Us Your Thoughts"]
         },
         {
           "answer": "Good day! I'm here to provide information and support. What's on your mind?",
-          "opts": ["Explore Courses","Upcoming Events","Give Us Your Thoughts"]
+          "opts": ["chatbot course","Upcoming Events","Give Us Your Thoughts"]
         },
         {
           "answer": "Hello! I'm at your service. What can I do for you today?",
-          "opts": ["Explore Courses","Upcoming Events","Give Us Your Thoughts"]
+          "opts": ["chatbot course","Upcoming Events","Give Us Your Thoughts"]
         },
         {
           "answer": "Hey, welcome! How can I assist you today with ChatBot?",
-          "opts": ["Explore Courses","Upcoming Events","Give Us Your Thoughts"]
+          "opts": ["chatbot course","Upcoming Events","Give Us Your Thoughts"]
         },
         {
           "answer": "Greetings from ChatBot! What can I assist you with today?",
-          "opts": ["Explore Courses","Upcoming Events","Give Us Your Thoughts"]
+          "opts": ["chatbot course","Upcoming Events","Give Us Your Thoughts"]
         },
         {
           "answer": "Hello and welcome! How can I make your experience better today?",
-          "opts": ["Explore Courses","Upcoming Events","Give Us Your Thoughts"]
+          "opts": ["chatbot course","Upcoming Events","Give Us Your Thoughts"]
         },
         {
           "answer": "Hi there! Ready to assist you with any questions or tasks. What's up?",
-          "opts": ["Explore Courses","Upcoming Events","Give Us Your Thoughts"]
+          "opts": ["chatbot course","Upcoming Events","Give Us Your Thoughts"]
         }
       ]
     },
     {
       "intent": "service.explore_course",
-      "utterances": ["explore courses", "udemy courses", "top courses", "avaliable courses","courses"],
+      "utterances": ["chatbot course", "udemy chatbot course", "top course", "avaliable course"],
       "answers": [
         {
           "answer": "Discover the most sought-after courses available: 'Chatbot with JavaScript' and 'Chatbot UI/UX Design with Next.js'.",
@@ -85,7 +85,7 @@
       "utterances": ["chatbot ui/ux in next.js", "ui/ux in next.js", "chatbot in next.js"],
       "answers": [
         {
-          "answer": "Creating an aesthetically pleasing user interface is an integral aspect of design, not solely focused on functionality. I have implemented this philosophy in this course, and you can enroll now. ",
+          "answer": "Creating an aesthetically pleasing user interface is an integral aspect of design, not solely focused on functionality. I have implemented this philosophy in this course, and you can enroll now. https://www.udemy.com/course/chatbot-ui-ux-in-nextjs/?referralCode=3500EFFFDD3662EB008F",
           "opts": ["Main Menu", "Give Feedback"]
         }
       ]
@@ -1204,6 +1204,26 @@
           "answer": "Great!",
           "opts": ["Give Feedback", "Talk To My BOSS", "Main Menu"]
         }
+      ]
+    },
+    {
+      "intent": "service.get_feedback",
+      "utterances": ["Give Feedback","feedback"],
+      "answers": [
+         {
+          "answer":" Please feel free to share your thoughts or suggestions about your experience with me or any specific questions you have. Your feedback is valuable and helps me improve.",
+          "opts":[]
+         }
+      ]
+    },
+    {
+      "intent": "service.your_thoughts",
+      "utterances": ["Give Us Your Thoughts","Your Thoughts", "i have suggestions for your"],
+      "answers": [
+         {
+          "answer":"Share your thoughts with us. We value your valuable feedback.",
+          "opts":[]
+         }
       ]
     },
     {

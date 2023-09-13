@@ -128,6 +128,7 @@
             padding: 5px 10px;
             font-size: 15px;
             border-radius: 10px 10px 0px 10px;
+            line-break: anywhere;
         }
 
         .time_stamp {
@@ -149,6 +150,7 @@
             padding: 5px 10px;
             font-size: 15px;
             border-radius: 10px 10px 10px 0px;
+            line-break: anywhere;
         }
 
         .time_stamp {
