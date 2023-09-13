@@ -3,9 +3,8 @@ import axios from 'axios';
 function GetBotUserResponse ({setConversations = () =>{}}){
 
     const saveUserMessage = (message) =>{
-        console.log('message', message);
         const userMessage = [{
-            "message": message,
+            "message": {answer: message},
             "time":"23:04",
             "type":"user"
         }]
@@ -26,7 +25,7 @@ function GetBotUserResponse ({setConversations = () =>{}}){
         )
         .then(function (response) {
             const botMessage = [{
-                "message": response.data?.message,
+                "message": response.data?.btn_message,
                 "time":"23:04",
                 "type":"bot"
             }]

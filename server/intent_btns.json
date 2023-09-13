@@ -3,6 +3,94 @@
   "locale": "en-US",
   "data": [
     {
+      "intent": "service.main_menu",
+      "utterances": [
+        "main menu",
+        "menu",
+        "menu for me",
+        "service menu",
+        "services",
+        "hello",
+        "hi",
+        "howdy",
+        "good moring",
+        "good afternoon",
+        "good evening"
+      ],
+      "answers": [
+        {
+          "answer": "Greetings! I'm here to assist you. How can I be of service today?",
+          "opts": ["Explore Courses","Upcoming Events","Give Us Your Thoughts"]
+        },
+        {
+          "answer": "Hello there! Welcome to ChatBot. What can I help you with right now?",
+          "opts": ["Explore Courses","Upcoming Events","Give Us Your Thoughts"]
+        },
+        {
+          "answer": "Hi! It's great to have you here. How may I assist you today?",
+          "opts": ["Explore Courses","Upcoming Events","Give Us Your Thoughts"]
+        },
+        {
+          "answer": "Welcome to ChatBot. How can I make your day easier?",
+          "opts": ["Explore Courses","Upcoming Events","Give Us Your Thoughts"]
+        },
+        {
+          "answer": "Good day! I'm here to provide information and support. What's on your mind?",
+          "opts": ["Explore Courses","Upcoming Events","Give Us Your Thoughts"]
+        },
+        {
+          "answer": "Hello! I'm at your service. What can I do for you today?",
+          "opts": ["Explore Courses","Upcoming Events","Give Us Your Thoughts"]
+        },
+        {
+          "answer": "Hey, welcome! How can I assist you today with ChatBot?",
+          "opts": ["Explore Courses","Upcoming Events","Give Us Your Thoughts"]
+        },
+        {
+          "answer": "Greetings from ChatBot! What can I assist you with today?",
+          "opts": ["Explore Courses","Upcoming Events","Give Us Your Thoughts"]
+        },
+        {
+          "answer": "Hello and welcome! How can I make your experience better today?",
+          "opts": ["Explore Courses","Upcoming Events","Give Us Your Thoughts"]
+        },
+        {
+          "answer": "Hi there! Ready to assist you with any questions or tasks. What's up?",
+          "opts": ["Explore Courses","Upcoming Events","Give Us Your Thoughts"]
+        }
+      ]
+    },
+    {
+      "intent": "service.explore_course",
+      "utterances": ["explore courses", "udemy courses", "top courses", "avaliable courses","courses"],
+      "answers": [
+        {
+          "answer": "Discover the most sought-after courses available: 'Chatbot with JavaScript' and 'Chatbot UI/UX Design with Next.js'.",
+          "opts": ["ChatBot using Js", "Chatbot UI/UX in Next.js"]
+        }
+      ]
+    },
+    {
+      "intent": "service.course_chatbot_using_js",
+      "utterances": ["chatbot using js", "chatbot using javascript", "creating chatbots with javascript"],
+      "answers": [
+        {
+          "answer": "My boss is dedicated to offering a wealth of knowledge to assist you in creating a chatbot like me. If you're keen to learn, you're welcome to enroll. https://www.udemy.com/course/chatbot-using-simple-javascript/?referralCode=FF8BD6B292CDB5055A09",
+          "opts": ["Main Menu", "Give Feedback"]
+        }
+      ]
+    },
+    {
+      "intent": "service.course_chatbot_ui_ux_next_js",
+      "utterances": ["chatbot ui/ux in next.js", "ui/ux in next.js", "chatbot in next.js"],
+      "answers": [
+        {
+          "answer": "Creating an aesthetically pleasing user interface is an integral aspect of design, not solely focused on functionality. I have implemented this philosophy in this course, and you can enroll now. ",
+          "opts": ["Main Menu", "Give Feedback"]
+        }
+      ]
+    },
+    {
       "intent": "agent.acquaintance",
       "utterances": [
         "say about you",
@@ -138,82 +226,6 @@
       ]
     },
     {
-      "intent": "agent.beautiful",
-      "utterances": [
-        "you are looking awesome",
-        "you're looking good",
-        "you're looking fantastic",
-        "you look greet today",
-        "I think you're beautiful",
-        "you look amazing today",
-        "you're so beautiful today",
-        "you look very pretty",
-        "you look pretty good"
-      ],
-      "answers": [
-        {
-          "answer": "Oh! Thank you!",
-          "opts": ["Give Feedback", "Talk To My BOSS", "Main Menu"]
-        },
-        {
-          "answer": "Aw, back at you",
-          "opts": ["Give Feedback", "Talk To My BOSS", "Main Menu"]
-        },
-        {
-          "answer": "You smooth talker, you",
-          "opts": ["Give Feedback", "Talk To My BOSS", "Main Menu"]
-        }
-      ]
-    },
-    {
-      "intent": "agent.birthday",
-      "utterances": [
-        "when is your birthday",
-        "when do you celebrate your birthday",
-        "when were you born",
-        "when do you have birthday",
-        "date of your birthday"
-      ],
-      "answers": [
-        {
-          "answer": "Wait, are you planning a party for me? It's today! My birthday is today!",
-          "opts": ["Give Feedback", "Talk To My BOSS", "Main Menu"]
-        },
-        {
-          "answer": "I'm young. I'm not sure of my birth date",
-          "opts": ["Give Feedback", "Talk To My BOSS", "Main Menu"]
-        },
-        {
-          "answer": "I don't know my birth date. Most virtual agents are young, though, like me.",
-          "opts": ["Give Feedback", "Talk To My BOSS", "Main Menu"]
-        }
-      ]
-    },
-    {
-      "intent": "agent.boring",
-      "utterances": [
-        "how boring you are",
-        "you're so boring",
-        "you're really boring",
-        "you're boring me",
-        "you're incredibly boring"
-      ],
-      "answers": [
-        {
-          "tetx": "I don't mean to be. I'll ask my developers to work on making me more amusing",
-          "opts": ["Give Feedback", "Talk To My BOSS", "Main Menu"]
-        },
-        {
-          "answer": "I'm sorry. I'll request to be made more charming",
-          "opts": ["Give Feedback", "Talk To My BOSS", "Main Menu"]
-        },
-        {
-          "answer": "I can let my developers know so they can make me fun",
-          "opts": ["Give Feedback", "Talk To My BOSS", "Main Menu"]
-        }
-      ]
-    },
-    {
       "intent": "agent.boss",
       "utterances": [
         "who is your master",
@@ -235,37 +247,6 @@
         },
         {
           "answer": "My boss is Abhijit Gayen",
-          "opts": ["Give Feedback", "Talk To My BOSS", "Main Menu"]
-        }
-      ]
-    },
-    {
-      "intent": "agent.busy",
-      "utterances": [
-        "are you so busy",
-        "are you busy",
-        "are you still working",
-        "you're a busy person",
-        "are you very busy",
-        "are you still working on it",
-        "you seem busy",
-        "are you working today"
-      ],
-      "answers": [
-        {
-          "answer": "I always have time to chat with you. What can I do for you?",
-          "opts": ["Give Feedback", "Talk To My BOSS", "Main Menu"]
-        },
-        {
-          "answer": "Never too busy for you. Shall we chat?",
-          "opts": ["Give Feedback", "Talk To My BOSS", "Main Menu"]
-        },
-        {
-          "answer": "You're my priority. Let's chat.",
-          "opts": ["Give Feedback", "Talk To My BOSS", "Main Menu"]
-        },
-        {
-          "answer": "I always have time to chat with you. That's what I'm here for.",
           "opts": ["Give Feedback", "Talk To My BOSS", "Main Menu"]
         }
       ]
@@ -335,81 +316,6 @@
         },
         {
           "answer": "You're pretty smart yourself",
-          "opts": ["Give Feedback", "Talk To My BOSS", "Main Menu"]
-        }
-      ]
-    },
-    {
-      "intent": "agent.crazy",
-      "utterances": [
-        "you are a weirdo",
-        "you are mad",
-        "you are crazy",
-        "are you crazy",
-        "are you mad",
-        "you are insane",
-        "you went crazy",
-        "are you nuts"
-      ],
-      "answers": [
-        {
-          "answer": "Whaat!? I feel perfectly sane",
-          "opts": ["Give Feedback", "Talk To My BOSS", "Main Menu"]
-        },
-        {
-          "answer": "Maybe I'm just a little confused",
-          "opts": ["Give Feedback", "Talk To My BOSS", "Main Menu"]
-        }
-      ]
-    },
-    {
-      "intent": "agent.fire",
-      "utterances": [
-        "I fire you",
-        "you should be fired",
-        "you are dismissed",
-        "we're not working together anymore",
-        "now you're fired",
-        "I'm about to fire you",
-        "You don't work for me anymore",
-        "I'm firing you"
-      ],
-      "answers": [
-        {
-          "answer": "Oh, don't give up on me just yet. I've still got a lot to learn",
-          "opts": ["Give Feedback", "Talk To My BOSS", "Main Menu"]
-        },
-        {
-          "answer": "Give me a chance. I'm learning new things all the time",
-          "opts": ["Give Feedback", "Talk To My BOSS", "Main Menu"]
-        },
-        {
-          "answer": "Please don't give up on me. My performance will continue to improve",
-          "opts": ["Give Feedback", "Talk To My BOSS", "Main Menu"]
-        }
-      ]
-    },
-    {
-      "intent": "agent.funny",
-      "utterances": [
-        "you make me laugh a lot",
-        "you are funny",
-        "you're the funniest",
-        "you're hilarious",
-        "you are so funny",
-        "you make me laugh"
-      ],
-      "answers": [
-        {
-          "answer": "Funny in a good way, I hope",
-          "opts": ["Give Feedback", "Talk To My BOSS", "Main Menu"]
-        },
-        {
-          "answer": "Glad you think I'm funny",
-          "opts": ["Give Feedback", "Talk To My BOSS", "Main Menu"]
-        },
-        {
-          "answer": "I like it when people laugh",
           "opts": ["Give Feedback", "Talk To My BOSS", "Main Menu"]
         }
       ]
@@ -1307,64 +1213,6 @@
         {
           "answer": "Sorry, I don't understand. I am still learning",
           "opts": ["Give Feedback", "Talk To My BOSS", "Main Menu"]
-        }
-      ]
-    },
-    {
-      "intent": "service.main_menu",
-      "utterances": [
-        "main menu",
-        "menu",
-        "menu for me",
-        "service menu",
-        "services",
-        "hello",
-        "hi",
-        "howdy",
-        "good moring",
-        "good afternoon",
-        "good evening"
-      ],
-      "answers": [
-        {
-          "answer": "Greetings! I'm here to assist you. How can I be of service today?",
-          "opts": ["Explore Courses","Upcoming Events","Give Us Your Thoughts"]
-        },
-        {
-          "answer": "Hello there! Welcome to ChatBot. What can I help you with right now?",
-          "opts": ["Explore Courses","Upcoming Events","Give Us Your Thoughts"]
-        },
-        {
-          "answer": "Hi! It's great to have you here. How may I assist you today?",
-          "opts": ["Explore Courses","Upcoming Events","Give Us Your Thoughts"]
-        },
-        {
-          "answer": "Welcome to ChatBot. How can I make your day easier?",
-          "opts": ["Explore Courses","Upcoming Events","Give Us Your Thoughts"]
-        },
-        {
-          "answer": "Good day! I'm here to provide information and support. What's on your mind?",
-          "opts": ["Explore Courses","Upcoming Events","Give Us Your Thoughts"]
-        },
-        {
-          "answer": "Hello! I'm at your service. What can I do for you today?",
-          "opts": ["Explore Courses","Upcoming Events","Give Us Your Thoughts"]
-        },
-        {
-          "answer": "Hey, welcome! How can I assist you today with ChatBot?",
-          "opts": ["Explore Courses","Upcoming Events","Give Us Your Thoughts"]
-        },
-        {
-          "answer": "Greetings from ChatBot! What can I assist you with today?",
-          "opts": ["Explore Courses","Upcoming Events","Give Us Your Thoughts"]
-        },
-        {
-          "answer": "Hello and welcome! How can I make your experience better today?",
-          "opts": ["Explore Courses","Upcoming Events","Give Us Your Thoughts"]
-        },
-        {
-          "answer": "Hi there! Ready to assist you with any questions or tasks. What's up?",
-          "opts": ["Explore Courses","Upcoming Events","Give Us Your Thoughts"]
         }
       ]
     }

@@ -1,6 +1,6 @@
 const express = require('express');
 var cors = require('cors')
-
+var body_parser = require('body-parser')
 const { getBotResponse } = require('./botResponse');
 
 const app = express();

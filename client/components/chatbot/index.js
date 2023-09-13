@@ -15,16 +15,18 @@ const ChatBot = () =>{
 
     const handleActiveBot = () =>{
         setIsBotActive((prev)=> !prev)
+        if (conversations.length < 1){
+            saveBotMessage('hello');
+        }
     }
 
     const getBotResponse = (enter_message) =>{
-        if(message.trim().length > 0){
+        if(enter_message.trim().length > 0){
             saveUserMessage(enter_message);
             saveBotMessage(enter_message);
             setMessage('')
         }
     }
-
 
     return (
         <div className={styles.bot_div}>
@@ -34,7 +36,7 @@ const ChatBot = () =>{
             {isBotActive ? (
             <div className={styles.chatbot_body}>
                 <Chatbotheader handleActiveBot={handleActiveBot}/>
-                <ChatBotBody conversations ={conversations} message={message}/>
+                <ChatBotBody conversations ={conversations} message={message} getBotResponse={getBotResponse}/>
                 <ChatBotFooter setMessage={setMessage} message={message} getBotResponse={getBotResponse} />
             </div>
             ): null}
