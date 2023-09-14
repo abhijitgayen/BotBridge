@@ -1,7 +1,7 @@
 const express = require('express');
 var cors = require('cors')
 var body_parser = require('body-parser')
-const { getBotResponse } = require('./botResponse');
+const { getBotResponse } = require('./chatbot/botResponse');
 
 const app = express();
 app.use(cors()).use(express.json());
