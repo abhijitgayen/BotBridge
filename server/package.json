@@ -4,8 +4,8 @@
   "description": "this is a basic chatbot using js",
   "main": "server.js",
   "scripts": {
-      "start": " node server.js",
-      "dev": "cd chatbot && node train.js && cd .. && node server.js"
+    "start": "node server.js",
+    "dev": "cd chatbot && node train.js && cd .. && node server.js"
   },
   "keywords": [
     "nlpjs",
