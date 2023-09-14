@@ -1,11 +1,27 @@
+require("dotenv").config();
 const express = require('express');
-var cors = require('cors')
-var body_parser = require('body-parser')
+const cors = require('cors')
+const body_parser = require('body-parser')
+
 const { getBotResponse } = require('./chatbot/botResponse');
+const  WhatsappCloud = require('./whatsapp');
+
+// whatsapp initial setup 
+const whatsapp = new WhatsappCloud(
+    {
+        accessToken: process.env.ACCESS_TOKEN,
+        graphAPIVersion: process.env.GRAPH_API_VERSION,
+        senderPhoneNumberId: process.env.SENDER_PHONE_NUMBER_ID,
+        WABA_ID: process.env.WABA_ID
+    }
+)
 
 const app = express();
 app.use(cors()).use(express.json());
 app.use(body_parser.json());
+
+
+
 
 app.get('/', (req, res) => {
     res.send({
@@ -39,16 +55,14 @@ app.post('/btn_chatbot', (req, res) => {
 })
 
 // time to integate whatsapp
-
-// connect whatsapp
 app.get("/webhook", (req, res) => {
-    let mode = req.query["hub.mode"];
-    let challange = req.query["hub.challenge"];
-    let token = req.query["hub.verify_token"];
+    const mode = req.query["hub.mode"];
+    const challange = req.query["hub.challenge"];
+    const token = req.query["hub.verify_token"];
 
     console.log("mode:", mode, "ch:", challange, "token:", token);
     if (mode && token) {
-        if (mode === "subscribe" && token === verify_token) {
+        if (mode === "subscribe" && token === process.env.AUTH_TOKEN) {
             res.status(200).send(challange);
         } else {
             res.status(403);
@@ -57,28 +71,25 @@ app.get("/webhook", (req, res) => {
 });
 
 app.post("/webhook", (req, res) => {
-    let body_param = req.body;
+    const body_param = req.body;
     if (body_param?.object) {
-        let body_param = req.body;
+        const body_param = req.body;
 
         if (body_param?.object) {
             if (body_param?.entry && body_param?.entry[0]?.changes && body_param?.entry[0]?.changes[0]?.value?.messages) {
-                let from = body_param.entry[0].changes[0].value.messages[0].from;
-                let msg_id = body_param.entry[0].changes[0].value.messages[0].id;
-                let reply_type = body_param.entry[0].changes[0].value.messages[0].type;
-
+                const message_body = body_param.entry[0].changes[0].value.messages[0]
+                const from = message_body.from;
+                const reply_type = message_body.type;
+                
                 if (reply_type === 'text') {
-                    let user_message = body_param.entry[0].changes[0].value.messages[0].text.body;
-                    botResponse(user_message).then((response) => {
-                        var message_to_send = {
-                            'message_type': 'text',
-                            'message_data': {
-                                'body': response.message
-                            }
-                        }
-                        console.log(user_message, 'this is user message');
-                        sendMessage(phone_no_id, from, token, message_to_send)
-                    });
+                    const user_message = message_body.text.body;
+                    sendWhatsappBotMessage(from,user_message)
+                }
+                if (reply_type === 'interactive'){
+                    const user_message = message_body.interactive?.button_reply?.title;
+                    const context_message_id = message_body?.context?.id;
+                    sendWhatsappBotMessage(from,user_message, context_message_id)
+                    console.log(user_message)
                 }
             }
             res.sendStatus(200);
@@ -88,6 +99,29 @@ app.post("/webhook", (req, res) => {
         }
     }
 });
+
+const sendWhatsappBotMessage = (from,user_message, message_id = null) => {
+    getBotResponse(user_message, true).then((response) => {
+        btns = response?.btn_message?.opts
+        if (btns && btns.length > 0){
+            const whatsapp_btns = btns.map((btn, index) => { return {"title": btn , "id": index+1} })
+
+            whatsapp.sendSimpleButtons({
+                message: response.message,
+                recipientPhone: from,
+                listOfButtons: whatsapp_btns,
+                message_id: message_id
+            });
+        }
+        else{
+            whatsapp.sendText({
+                message: response.message,
+                recipientPhone: '917044136740',
+                message_id: message_id,
+            });
+        }
+    });
+}
 
 app.listen(3000, () => {
     console.log('listening on port')

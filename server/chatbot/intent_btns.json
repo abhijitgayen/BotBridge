@@ -20,43 +20,43 @@
       "answers": [
         {
           "answer": "Greetings! I'm here to assist you. How can I be of service today?",
-          "opts": ["chatbot course","Upcoming Events","Give Us Your Thoughts"]
+          "opts": ["chatbot course","Upcoming Events","Give Your Thoughts"]
         },
         {
           "answer": "Hello there! Welcome to ChatBot. What can I help you with right now?",
-          "opts": ["chatbot course","Upcoming Events","Give Us Your Thoughts"]
+          "opts": ["chatbot course","Upcoming Events","Give Your Thoughts"]
         },
         {
           "answer": "Hi! It's great to have you here. How may I assist you today?",
-          "opts": ["chatbot course","Upcoming Events","Give Us Your Thoughts"]
+          "opts": ["chatbot course","Upcoming Events","Give Your Thoughts"]
         },
         {
           "answer": "Welcome to ChatBot. How can I make your day easier?",
-          "opts": ["chatbot course","Upcoming Events","Give Us Your Thoughts"]
+          "opts": ["chatbot course","Upcoming Events","Give Your Thoughts"]
         },
         {
           "answer": "Good day! I'm here to provide information and support. What's on your mind?",
-          "opts": ["chatbot course","Upcoming Events","Give Us Your Thoughts"]
+          "opts": ["chatbot course","Upcoming Events","Give Your Thoughts"]
         },
         {
           "answer": "Hello! I'm at your service. What can I do for you today?",
-          "opts": ["chatbot course","Upcoming Events","Give Us Your Thoughts"]
+          "opts": ["chatbot course","Upcoming Events","Give Your Thoughts"]
         },
         {
           "answer": "Hey, welcome! How can I assist you today with ChatBot?",
-          "opts": ["chatbot course","Upcoming Events","Give Us Your Thoughts"]
+          "opts": ["chatbot course","Upcoming Events","Give Your Thoughts"]
         },
         {
           "answer": "Greetings from ChatBot! What can I assist you with today?",
-          "opts": ["chatbot course","Upcoming Events","Give Us Your Thoughts"]
+          "opts": ["chatbot course","Upcoming Events","Give Your Thoughts"]
         },
         {
           "answer": "Hello and welcome! How can I make your experience better today?",
-          "opts": ["chatbot course","Upcoming Events","Give Us Your Thoughts"]
+          "opts": ["chatbot course","Upcoming Events","Give Your Thoughts"]
         },
         {
           "answer": "Hi there! Ready to assist you with any questions or tasks. What's up?",
-          "opts": ["chatbot course","Upcoming Events","Give Us Your Thoughts"]
+          "opts": ["chatbot course","Upcoming Events","Give Your Thoughts"]
         }
       ]
     },
@@ -66,7 +66,7 @@
       "answers": [
         {
           "answer": "Discover the most sought-after courses available: 'Chatbot with JavaScript' and 'Chatbot UI/UX Design with Next.js'.",
-          "opts": ["ChatBot using Js", "Chatbot UI/UX in Next.js"]
+          "opts": ["ChatBot using Js", "Chatbot UI Next.js"]
         }
       ]
     },
@@ -82,7 +82,7 @@
     },
     {
       "intent": "service.course_chatbot_ui_ux_next_js",
-      "utterances": ["chatbot ui/ux in next.js", "ui/ux in next.js", "chatbot in next.js"],
+      "utterances": ["Chatbot UI Next.js", "ui/ux in next.js", "chatbot in next.js"],
       "answers": [
         {
           "answer": "Creating an aesthetically pleasing user interface is an integral aspect of design, not solely focused on functionality. I have implemented this philosophy in this course, and you can enroll now. https://www.udemy.com/course/chatbot-ui-ux-in-nextjs/?referralCode=3500EFFFDD3662EB008F",
@@ -1218,7 +1218,7 @@
     },
     {
       "intent": "service.your_thoughts",
-      "utterances": ["Give Us Your Thoughts","Your Thoughts", "i have suggestions for your"],
+      "utterances": ["Give Your Thoughts","Your Thoughts", "i have suggestions for your"],
       "answers": [
          {
           "answer":"Share your thoughts with us. We value your valuable feedback.",
