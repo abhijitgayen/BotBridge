@@ -68,6 +68,7 @@ app.get("/webhook", (req, res) => {
             res.status(403);
         }
     }
+    res.send('this is not whatsapp webhook')
 });
 
 app.post("/webhook", (req, res) => {
