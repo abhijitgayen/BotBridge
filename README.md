@@ -24,6 +24,8 @@ In an increasingly digital world, chatbots have become integral in delivering ef
 
 7. **Security**: Implement robust security measures to protect user data and ensure secure communication with the chatbot.
 
+8. **Whatsapp Integation**: This chatbot also integated with whatsapp.
+
 
 **This project presents an exciting opportunity to contribute to the advancement of conversational AI and empower developers to create engaging and efficient user interactions across diverse digital platforms.**
 
@@ -43,19 +45,23 @@ npm i
 ```
 to test and train model 
 ```terminal
-npm run test
+cd chatbot && node train.js && node input.js
 ```
 to train model
 ```terminal
-npm run train
+cd chatbot && node train.js
 ```
 for development
 ```terminal
-npm run start
+npm run dev
 ```
+
+[!WARNING] 
+ Please be aware that when starting the server, you may encounter issues running it. To resolve this, refer to the .env.example file and ensure you add the necessary keys as instructed. Once you've done this, you should be able to successfully run the server.
+
 to deploy or run sever
 ```terminal
-npm run build
+npm run start
 ```
 ## Run ChatBot UI/UX 
 ```terminal
@@ -74,8 +80,7 @@ for delpoy frontend APP
 yarn build
 ```
 
-
-
+Whatsapp is also 
 # You can enrol this course to see how i make this
 <a href="https://www.udemy.com/course/chatbot-using-simple-javascript/?couponCode=CODEWITHABHIJIT">
   <img src="https://codewithabhijit.vercel.app/images/demo/course_1.jpg" alt="Chat Bot Using Simple javascript" width="300" title="Course ChatBot Using Simple javascripts"/>
