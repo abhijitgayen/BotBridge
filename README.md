@@ -106,6 +106,7 @@ for development
 ```
 uvicorn main:app --reload
 ```
+to konw about the python chatbot model you can see [here](https://github.com/abhijitgayen/BotBridge/blob/main/server_python/readme.md)
 
 # My Observation
 Python provides quicker responses than JavaScript due to the fast performance of FastAPI, similar to the speed of the Go language.
