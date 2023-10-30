@@ -37,7 +37,7 @@ git clone https://github.com/abhijitgayen/BotBridge.git
 ```
 ## Run ChatBot Server for ChatBot API
 ```terminal
-cd BotBridge/server
+cd BotBridge/server_js
 ```
 To install all dependencies.
 ```terminal
@@ -80,7 +80,40 @@ for delpoy frontend APP
 yarn build
 ```
 
-Whatsapp is also 
+# How to run python chatbot (Fast API)
+```
+cd BotBridge/server_python
+```
+if you want to use virtual environment python . we can follow this ways
+```
+python3.10 -m venv venv
+```
+```
+. venv/bin/activate
+```
+
+how to install all dependency
+```
+pip install -r requirements.txt
+```
+how to run this server( uvicorn)
+
+for deployment
+```
+uvicorn main:app --host 0.0.0.0 --port 3000
+```
+for development
+```
+uvicorn main:app --reload
+```
+
+# My Observation
+Python provides quicker responses than JavaScript due to the fast performance of FastAPI, similar to the speed of the Go language.
+I'm unable to deploy my Python app for free because the application size exceeds 500 MB.
+
+# Contact Me
+If you encounter any issues running a command, please feel free to reach out to me via email at abhijitgayen428@gmail.com. I'll be happy to assist you.
+ 
 # You can enrol this course to see how i make this
 <a href="https://www.udemy.com/course/chatbot-using-simple-javascript/?couponCode=CODEWITHABHIJIT">
   <img src="https://codewithabhijit.vercel.app/images/demo/course_1.jpg" alt="Chat Bot Using Simple javascript" width="300" title="Course ChatBot Using Simple javascripts"/>
