@@ -21,8 +21,6 @@ app.use(cors()).use(express.json());
 app.use(body_parser.json());
 
 
-
-
 app.get('/', (req, res) => {
     res.send({
         'message': 'Server is running',
