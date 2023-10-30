@@ -1,10 +1,8 @@
-# About This Project **NeuraLite Chatbot**
+# About This Project 
 
-This chatbot employs a straightforward neural network architecture, ideal for button-based interactions, ensuring rapid responses. We've employed a simplified neural network to train the model, and our team is actively enhancing this project to deliver even quicker real-time communication solutions.
-
-When you send a message, our system identifies patterns and generates responses tailored to your specific needs. You have the flexibility to customize the bot's responses to align with your requirements. Additionally, you can leverage API calls to generate messages tailored to your preferences.
-
-# About Our Model
+This chatbot employs a straightforward neural network architecture, ideal for button-based interactions. 
+ 
+# About Model
 
 Machines primarily understand numerical data, such as vectors and matrices, and not natural language text directly. 
 
